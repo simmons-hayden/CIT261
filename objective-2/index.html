@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CIT 261 - Objective 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Objects Fluency (2)</h1>
+    </header>
+    <h2>Object creation example</h2>
+    <p>Tell me about your dog. If you don't have one, describe the best dog.</p>
+    <form name="objectForm">
+        Breed <input type="text" id="color" name="breed" placeholder="Ex. lab" /><br>
+        Size <input type="text" id="size" name="size" placeholder="Ex. huge" /><br>
+        <label>Is it a good boy/girl?</label>
+        <select id="good">
+            <option value="">Yes</option>
+            <option value="not ">No</option>
+        </select><br>
+        <button id="button" type="button" value="submit" onclick="createObject()">Create dog object</button>
+    </form>
+
+    <p id="displayObject"></p>
+    <hr>
+
+    <h2>Inheritance exercise</h2>
+
+    <p>Tell me about a person you know. No more than two people. No one actually knows more than two people.</p>
+
+    <div id="personInput">
+        Name <input type="text" id="name" placeholder="John Doe" /><br>
+        Gender <input type="text" id="gender" placeholder="Male" /><br>
+        Age <input type="text" id="age" placeholder="25" /><br>
+        <button onclick="addObject()" id="button1">Create person</button>
+    </div>
+
+    <br>
+    <div id="output2"></div><br>
+    <div id="output4"></div>
+
+    <div id="output"></div>
+    <div id="foodSection" style="display: none;">
+        <p>Well now, what's their favorite food?</p>
+        <input type="text" id="food" placeholder="Ex. baklava" />
+        <button onclick="food()">Save food</button>
+    </div>
+    <footer>
+        &copy; Hayden Simmons 2018
+    </footer>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
+</html>

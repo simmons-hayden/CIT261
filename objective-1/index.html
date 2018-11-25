@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CIT 261 - Objective 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Fluency (1)</h1>
+    </header>
+    <div id="forLoop">
+        <h2>For loop example</h2>
+        <p> Get a random number<br>
+            <button id="randomGenerator" type="button" onclick="forLoop()">Generate</button><br>
+            <div id="forLoopOutput"></div>
+    </div>
+    <hr>
+    <div id="whileLoop">
+        <h2>While loop example</h2>
+        <p>Count to 20<br>
+            <button type="button" onclick="whileLoop()">Count</button>
+            <button type="button" onclick="clearWhileLoop();">Clear</button>
+            <div id="whileLoopOutput"></div>
+    </div>
+    <hr>
+    <div id="doLoop">
+        <h2>Do while loop example</h2>
+        <p>Count to 5</p>
+        <button type="button" onclick="whileDoLoop();">Count</button>
+        <button type="button" onclick="clearDo();">Clear</button>
+        <div id="doLoopOutput"></div>
+    </div>
+    <hr>
+    <div id="ifStatement">
+        <h2>Conditional statement example</h2>
+        <strong>Enter Score </strong><br><br>
+        <input type="text" id="enterGrade"><br>
+        <button type=button onclick="process();">Calculate letter grade</button>
+        <button type="button" onclick="clearGrade();">Clear</button>
+        <div id="letterGrade"></div>
+    </div>
+    <hr>
+    <div id="parameters">
+        <h2>Parameters and variables example</h2>
+        <strong>Enter distance</strong><br>
+        Kilometers <input type="input" id="km" />
+        <button type="button" onclick="convert('KM')">To miles </button><br>
+        Miles <input type="input" id="mi" />
+        <button type="button" onclick="convert('MI')">To kilometers </button><br>
+        <button type="button" onclick="clearDistance();">Clear</button>
+    </div>
+    <hr>
+    <div id="array">
+        <h2>Array example</h2>
+        <p>Let's list some friends' first and last names</p>
+        First name:<input type="input" id="inputArray1">
+        Last name:<input type="input" id="inputArray2"><br>
+        <button type="button" onclick="array();">Add</button>
+        <button type="button" onclick="clearArray();">Reset</button><br>
+        <span id="arrayDemo1"></span>
+    </div>
+    <hr>
+    <h2>Associative array example</h2>
+    <p>Want to know the ingredients of my ideal sandwich?<br>
+        Please select a category below</p>
+    <select id="associativeArrayinput">
+        <option value="bread">Bread</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="cheese">Cheese</option>
+        <option value="meat">Meat</option>
+        <option value="condiment">Condiment</option>
+    </select>
+    <button type="button" onclick="associativeArray();">Submit</button>
+    <div id="associativeArrayOutput"></div>
+    </div>
+    </div>
+    <footer>
+        &copy; Hayden Simmons 2018
+    </footer>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
