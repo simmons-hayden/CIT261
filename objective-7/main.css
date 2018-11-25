@@ -1,0 +1,25 @@
+.box {
+    width: 400px;
+    height: 50px;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+#maybeMessage, #font, #backgroundSelector {
+    padding: 40px;
+}
+
+.purpleBackground {
+    background-color: #592C82;
+    color: white;
+}
+
+.transform {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}		

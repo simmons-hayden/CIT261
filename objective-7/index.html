@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CIT 261 - Objective 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Manipulating CSS Class Properties Using JavaScript Fluency (7)</h1>
+    </header>
+    <div id="backgroundSelector">Choose a background color!</div>
+    <button onclick="backgroundColor('teal')">Teal</button>
+    <button onclick="backgroundColor('blue')">Blue</button>
+    <button onclick="backgroundColor('pink')">Pink</button>
+    <button onclick="backgroundColor('purple')">Purple</button>
+    <button onclick="backgroundColor('yellow')">Yellow</button>
+    <button onclick="backgroundColor('0')">Remove background color class</button>
+    <hr>
+    <div id="fontArea">
+        <div id="font">Maybe you can change me!</div>
+        <button onclick="fontWeight('900')">Heavy</button>
+        <button onclick="fontStyle('italic')">Italic</button>
+        <button onclick="document.getElementById('font').style.fontFamily = 'Comic Sans MS'">Comic Sans</button>
+        <button onclick="getClassColor('crimson');">Crimson background</button>
+        <button onclick="document.getElementById('font').style.color ='darkturquoise'">Turquoise color</button>
+    </div>
+    <hr>
+    <div id="maybeMessage">
+        Maybe you can change me too!
+    </div>
+    <button onclick="addClass1()">Add border class</button>
+    <button onclick="addClass2()">Add purple class</button>
+    <button onclick="addClass3()">Add transform class</button>
+    <button onclick="removeClass1()">Remove border class</button>
+    <button onclick="removeClass2()">Remove purple class</button>
+    <button onclick="removeClass3()">Remove transform class</button>
+    <footer>
+        &copy; Hayden Simmons 2018
+    </footer>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
