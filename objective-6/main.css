@@ -1,0 +1,15 @@
+.block {
+  color: #3f3f3f;
+  border: solid 2px #3f3f3f;
+  padding: 10px;
+  margin-top: 10px;
+  width: 25%;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  border: none;
+  background-color: #00AAC6;
+}
