@@ -1,0 +1,71 @@
+button {
+  border-radius: 5px;
+  background-color: #00AAC6;
+  color: white;
+  margin: 10px;
+  font-size: 22px;
+  width: 32px;
+  height: 32px;
+}
+
+div.completed span{
+  color: grey;
+  text-decoration: line-through;
+}
+
+.duplicate {
+  position: absolute;
+  background-color: #F3F3F3;
+}
+
+footer {
+  padding-top: 15px;
+}
+
+.handle {
+  background-color: #00AAC6;
+  color:#FFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 36px;
+  height: 37px;
+  padding: 0 6px;
+  margin-right: 4px;
+}
+
+.handle:hover {
+  cursor: move;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+input {
+  height: 32px;
+  font-size: 24px;
+  width: 50%;
+  padding-left: 5px;
+}
+
+.task-child {
+  min-width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.to-do-task {
+  color: #3d3d3d;
+  padding: 5px;
+  display: flex;
+  user-select: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.to-do-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
