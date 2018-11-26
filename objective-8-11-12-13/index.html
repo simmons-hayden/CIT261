@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CIT 261 - Objective 8,11,12,13</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+<body>
+  <header>
+    <h1>CSS Transitions, Transforms, and Animations (and triggering with JavaScript) Fluency (8,11,12,13)</h1>
+  </header>
+  <section>
+    <h1>Clock</h1>
+    <p>The second hand uses <strong>animation</strong> with keyframes to animate its rotation.</p>
+    <p>The minute and hour hands use <strong>transitions</strong> triggered when JavaScript changes the <span class="code">transform:
+        rotate()</span> style property.</p>
+    <p>Click the clock to push into it and see another example of animation. Don't worry, it will fall back into place.</p>
+  </section>
+  <section class="clock-face">
+    <div class="hour-container">
+      <div class="hour hand">
+      </div>
+    </div>
+    <div class="minute-container">
+      <div class="minute hand">
+      </div>
+    </div>
+    <div class="second-container">
+      <div class="second hand"></div>
+      <div class="circle"></div>
+    </div>
+  </section>
+  <footer>
+    &copy; Hayden Simmons 2018
+  </footer>
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>

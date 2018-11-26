@@ -1,0 +1,135 @@
+@keyframes second {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes push {
+  0% {
+    background-color: #A4998D;
+    transform: rotateY(0deg);
+  }
+  10% {
+    background-color: #7E6E5D;
+    transform: rotateY(90deg);
+  }
+  35% {
+    background-color: #705E4C;
+    transform: rotateY(-50deg);
+  }
+  60% {
+    background-color: #B7AEA5;
+    transform: rotateY(30deg);
+  }
+  80% {
+    background-color: #7E6E5D;
+    transform: rotateY(-25deg);
+  }
+  100% {
+    background-color: #A4998D;
+    transform: rotateY(0deg);
+  }
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  overflow: hidden;
+}
+
+.clock-face {
+  position: relative;
+  border-radius:100%;
+  border: solid #331900;
+  border-width: 1vw;
+  width: 50vw;
+  max-width: 90vh;
+  height: 50vw;
+  max-height: 90vh;
+  background-color: #E5D9CE;
+}
+
+.code {
+  font-family: courier;
+  background-color: #F3F3F3;
+  padding: 4px;
+}
+
+.hand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #3F3F3F;
+  transform-origin: center bottom;
+}
+
+.hour {
+  width: 3%;
+  height: 35%;
+  transform: translate(1615%, 60%);
+}
+
+.hour-container, .minute-container, .second-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hour-container {
+  transition: transform .2s;
+}
+
+.minute {
+  width: 2%;
+  height: 45%;
+  transform: translate(2450%,25%);
+}
+
+.minute-container {
+  transition: transform .2s;
+  transition-timing-function: cubic-bezier(.62,0,.75,1)
+}
+
+.push {
+  animation-name: push;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 30%;
+}
+
+.second {
+  background-color: #CC0000;  
+  width: 1%;
+  height: 58%;
+  transform: translate(4945%, 10%);
+}
+
+.second-container {
+  animation-name: second;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.second-container div.circle {
+  border-radius: 200%;
+  background-color:#CC0000;
+  height: 3%;
+  width: 3%;
+  transform: translate(1615%, 1615%);
+}
