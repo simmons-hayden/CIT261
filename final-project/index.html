@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CIT 261 - Final Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <h1>Burrito Board Memory Challenge</h1>
+    <div class="flip" id="burritoBoard"></div>
+    <p class="dataRow">
+        <span id="moveCount">0</span><span> Move(s)</span>
+    </p>
+    <p class="dataRow">
+        <span id="time">0</span> <span>second(s)</span>
+    </p>
+    <p>
+        <span id="restart" ontouchend="clearInterval(nowTime); startBoard();" onclick="clearInterval(nowTime); startBoard();">Restart</span>
+    </p>
+    <footer>
+        &copy; Hayden Simmons 2018
+    </footer>
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>
